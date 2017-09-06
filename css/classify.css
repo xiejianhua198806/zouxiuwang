@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+.header i{ float: left; margin:0.6rem 0 0 0.5rem; color:#000;}
+
+
+/*内容*/
+.content{top:4.3rem;bottom:2.4rem;}
+.content_ul li{
+	width:100%;
+	height:2.15rem;
+	border-top:0.025rem solid #cbcbcb; 
+    border-bottom:0.025rem solid #aaaaaa;
+}
+.content_ul li a{
+	display: block;
+	width:87%;
+	margin: 0 auto;
+	height:2.15rem;
+	font-size: 1rem;
+	line-height: 2.15rem;
+    color: #000;
+    
+}
+.content_ul li a span{
+	padding-left:0.75rem;
+}
+.content_ul .li1 a span{
+	padding-left:0;
+}
+.content_ul li a i{float:right; font-size: 2rem;color:#a9a9a9;}
+
+.footer .footer_a:nth-of-type(2){border-top:0.125rem solid #e4366b;}

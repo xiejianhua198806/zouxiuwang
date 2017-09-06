@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/*reset*/
+body,button,input,select,textarea{font:100%/1 "Helvetica Neue",Helvetica,STHeiTi,"Microsoft YaHei";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,article,aside,footer,header,hgroup,nav,section,menu{margin:0; padding:0;-webkit-text-size-adjust:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+em,i{font-style:normal;}
+li{list-style:none;}
+img{border:0;}
+input,img{vertical-align:middle;}
+article,aside,footer,header,hgroup,nav,section,menu{display:block;}
+a{text-decoration:none;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+html,body{height:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;color: #666666;font-size: 20px !important;overflow: hidden;}
+body{font-size: .6rem !important;}
+a,input,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);outline:none; -webkit-font-smoothing:antialiased}
+
+
+/*html{font-size: 20px;}
+body{font: .6rem "微软雅黑";}*/
+
+/*最外层*/
+body{
+	overflow: hidden;
+}
+.Z-index,.Z-classify,.Z-product-detail,.Z-myShow,.Z-zone,.Z-register-login{
+	width:100%;
+	height: 100%;
+}
+
+/*顶部*/
+.header,.searchBar,.banner,.main{border-top:0.025rem solid #636363; border-bottom:0.025rem solid #282828;}
+.header{ 
+	width:100%; 
+	height:2.15rem; 
+	background: #e4366b; 
+	font-size:1rem; 
+	color:#FFFFFF; 
+	text-align: center;
+	border-top:none;
+    line-height: 2.15rem; 
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+
+
+/*中间可滑动部分*/
+.content{width:100%;overflow: hidden;position: absolute;}
+
+
+/*搜索框*/
+.searchBar{width:100%; height:2.15rem;position: absolute; background: #52525a;top:2.15rem;z-index: 100;}
+.form{ width:92%; height:65%; margin: 0.4rem auto; border-radius: 18px;background: #FFF;}
+.form img{ display:block;width:0.85rem; height:0.95rem; float:left; margin-left: 0.675rem; margin-top: 0.225rem;}
+.form input{ width:79%; height:80%; margin-left: 0.5rem; margin-top: 0.16rem; border:none; outline: none;}
+.datalist{
+	display: none;
+	width:86%; 
+	height: 6.75rem;
+	position: absolute; 
+	top:88%;
+	left: 7%;
+	height: 5.2rem;
+	border: 2px;
+	background: #FFF;
+	overflow: auto;
+	border: 1px solid #666;
+	border-radius: 6px;
+}
+.datalist li{
+	height: 1rem;
+	padding-left: 0.7rem; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-bottom: 1px dashed #666;
+	border-radius: 5px;
+	line-height: 1rem;
+}
+
+/*底部*/
+.footer{ display:-webkit-box;z-index: 100; width:100%;height:2.4rem;background: #484850;position: absolute;bottom:0;left:0;right:0}
+.footer .footer_a{-webkit-box-flex:1;color:#ffffff; text-align: center;padding-top:0.25rem;position:relative;border-top:0.125rem solid transparent;display: block;}
+.footer .footer_a i{ font-size: 1.2rem;}
+.footer .footer_a span{ font-size: 0.625rem;}
+
+/*商品详情*/
+.footer1{ display:-webkit-box; position: fixed; bottom:0;left:0;rihgt:0;z-index: 100; width:100%;height:2.4rem;background: #484850;}
+.footer1 div{-webkit-box-flex:1;color:#ffffff; text-align: center;position:relative;
+border-top:0.125rem solid transparent;border-right:1px solid #000; line-height:2.4rem;}
+.footer1 div span{ font-size: 0.875rem;}
+.footer1 div:nth-of-type(3){border-right:1px solid transparent;}
